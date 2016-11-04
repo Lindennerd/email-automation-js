@@ -1,0 +1,19 @@
+{
+  "name": "email-automation-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lindennerd/email-automation-js.git"
+  },
+  "author": "Lindennerd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lindennerd/email-automation-js/issues"
+  },
+  "homepage": "https://github.com/Lindennerd/email-automation-js#readme"
+}
