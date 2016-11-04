@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Lindennerd/email-automation-js/issues"
   },
-  "homepage": "https://github.com/Lindennerd/email-automation-js#readme"
+  "homepage": "https://github.com/Lindennerd/email-automation-js#readme",
+  "dependencies": {
+    "emailjs-imap-client": "^2.0.2"
+  }
 }
