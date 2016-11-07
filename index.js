@@ -4,7 +4,6 @@ var sqlite3 = require('sqlite3').verbose();
 var cheerio = require('cheerio');
 var nodemailer = require('nodemailer');
 
-
 var transporter = nodemailer.createTransport('smtps://lindennerd@gmail.com:<PASSWORD>@smtp.gmail.com');
 var db = new sqlite3.Database('.\\emailautomation.db');
 var imap = configure();
@@ -56,6 +55,7 @@ function main(callback) {
         });
     });
 }
+
 function configure() {
     var imap = new ImapClient({
         port: 993,
