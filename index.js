@@ -9,6 +9,24 @@ var db = new sqlite3.Database('.\\emailautomation.db');
 var imap = configure();
 run();
 
+function configure() {
+    var imap = new ImapClient({
+        port: 993,
+        host: 'imap.gmail.com',
+        secure: true,
+        ignoreTLS: false,
+        requireTLS: true,
+
+        auth: {
+            user: 'lindennerd@gmail.com',
+            pass: '',
+        },
+
+        maxUpdateSize: 20
+    });
+    return imap;
+}
+
 function run() {
     main(function () {
         setTimeout(main, 1000);
@@ -54,24 +72,6 @@ function main(callback) {
             });
         });
     });
-}
-
-function configure() {
-    var imap = new ImapClient({
-        port: 993,
-        host: 'imap.gmail.com',
-        secure: true,
-        ignoreTLS: false,
-        requireTLS: true,
-
-        auth: {
-            user: 'lindennerd@gmail.com',
-            pass: '',
-        },
-
-        maxUpdateSize: 20
-    });
-    return imap;
 }
 
 function initDB(cb) {
