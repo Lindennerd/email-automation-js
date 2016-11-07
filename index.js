@@ -10,7 +10,7 @@ var imap = new ImapClient({
 
     auth: {
         user: 'lindennerd@gmail.com',
-        pass: '574r@w4r5123',
+        pass: '',
     },
 
     maxUpdateSize: 20
